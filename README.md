@@ -37,7 +37,7 @@ Bu yama, resmi `SimulIDE_2-R260501_Win64` kurulumuna doğrudan **STM32F101 / STM
 1. Resmi **SimulIDE 2.0 (`SimulIDE_2-R260501_Win64`)** paketini bilgisayarınıza indirin ve çıkarın.
 2. Bu depoyu indirin veya klonlayın:
    ```bash
-   git clone https://github.com/<KULLANICI_ADINIZ>/<REPO_ADINIZ>.git
+   git clone https://github.com/kurekciyusuf/SimulIDE-STM32F103-Patch-v1.0.0.git
    ```
 3. **Otomatik Kurulum:** [`install_stm32_patch.bat`](install_stm32_patch.bat) dosyasını çalıştırıp SimulIDE klasör yolunu verin:
    ```bat
@@ -80,7 +80,7 @@ This patch enables **STM32F101 / STM32F103 (`QemuDevice`)** simulation directly 
 1. Download and extract official **SimulIDE 2.0 (`SimulIDE_2-R260501_Win64`)**.
 2. Clone or download this repository:
    ```bash
-   git clone https://github.com/<YOUR_USERNAME>/<YOUR_REPO>.git
+   git clone https://github.com/kurekciyusuf/SimulIDE-STM32F103-Patch-v1.0.0.git
    ```
 3. **Automated Install:** Run [`install_stm32_patch.bat`](install_stm32_patch.bat) targeting your SimulIDE folder:
    ```bat
@@ -108,6 +108,7 @@ This patch enables **STM32F101 / STM32F103 (`QemuDevice`)** simulation directly 
 ├── install_stm32_patch.bat        # One-step Windows installer script
 ├── .gitattributes
 ├── .gitignore
+├── LICENSE                        # GNU General Public License v3 (GPL-3.0)
 └── README.md
 ```
 
@@ -121,8 +122,9 @@ This work is an add-on patch built for the open-source **SimulIDE 2.0** (`SimulI
 * **Upstream SimulIDE Repository:** [Arcachofo/SimulIDE-dev](https://github.com/Arcachofo/SimulIDE-dev) — `Copyright (C) 2012–2025 Santiago González`
 * **Upstream QEMU Fork:** [Arcachofo/qemu_simulide](https://github.com/Arcachofo/qemu_simulide)
 * **Licenses / Lisanslar:**
-  * SimulIDE 2.0 core is licensed under **GNU Affero General Public License v3 (AGPL-3.0)** *(contributed code under **GPL-3.0**)*.
-  * `qemu_simulide` is licensed under **GNU General Public License v2 (GPL-2.0)**.
+  * Bu yama deposu, SimulIDE `copyright.txt` (üçüncü taraf katkılar için **GPL-3.0**) ve `examples/STM32` (`GPL-2.0-or-later`) ile uyumlu olarak **GNU General Public License v3 ([`LICENSE`](LICENSE))** altında sunulmuştur.
+  * This patch repository is distributed under **GNU General Public License v3 ([`LICENSE`](LICENSE))**, matching SimulIDE's `copyright.txt` (`GPL-3.0` for third-party contributions) and `examples/STM32` (`GPL-2.0-or-later`).
+  * SimulIDE 2.0 core is licensed under **GNU Affero General Public License v3 (AGPL-3.0)**; `qemu_simulide` is licensed under **GNU General Public License v2 (GPL-2.0)**.
 * **Disclaimer / Kapsam Notu:** Bu depo yalnızca resmi `SimulIDE_2-R260501_Win64` dağıtımı üzerine STM32 bileşenlerini/örneklerini ve paylaşımlı bellek köprüsünü ekler; resmi `simulide.exe` ikilisi burada yeniden dağıtılmaz (`This repository only provides the STM32 add-on patch; the upstream simulide.exe binary is not redistributed and all upstream rights remain with the original author`).
 
 

@@ -1,2 +1,21 @@
-# Ignore private firmware/projects, logs, backups, and full upstream SimulIDE binaries
+# Private firmware / unrelated projects
+*.hex
+kaynak*
+Firmware_STM32/
+Orijinal_Kaynak_Dosyalari/
 
+# Debug, logs, backups & archives
+*.log
+*.bak
+*.original.bak
+*.zip
+*.rar
+
+# Do not commit full upstream SimulIDE binaries into the patch repo
+simulide.exe
+simulide_*.exe
+*.dll
+
+__pycache__/
+.DS_Store
+Thumbs.db
