@@ -1,0 +1,31 @@
+STM32 Microcontroller Component for SimulIDE 2
+==================================================
+
+Overview:
+---------
+Simulates ARM Cortex-M3 STM32F101, STM32F102, and STM32F103 microcontrollers
+using an out-of-process QEMU backend communicating across low-latency shared
+memory.
+
+Supported Devices:
+------------------
+- STM32F103C8 (LQFP48, 64KB Flash, 20KB SRAM)
+- STM32F103RB (LQFP64, 128KB Flash, 20KB SRAM)
+- STM32F103VE (LQFP100, 512KB Flash, 64KB SRAM)
+- STM32F101R4 (LQFP64, 16KB Flash, 4KB SRAM)
+
+Firmware Loading:
+-----------------
+- Format: Raw binary (.bin).
+- Vectors: Must begin with vector table (Stack pointer at 0x00000000, Reset_Handler at 0x00000004).
+- Automatic padding: If the .bin file is smaller than device flash capacity,
+  SimulIDE pads trailing bytes with 0xFF.
+
+Peripherals:
+------------
+- GPIO: Full 16-bit ports with atomic BSRR/BRR and mode configuration.
+- EXTI / AFIO: External interrupts on any pin with MAPR remapping.
+- USART: Serial communication up to 115200 baud with Serial Monitor.
+- I2C: I2C1 master / slave connecting to EEPROMs and I2C displays.
+- Timers: PWM generation on TIM1, TIM2, TIM3, TIM4 channels.
+

@@ -1,0 +1,17 @@
+<!DOCTYPE SimulIDE>
+
+<itemlib>
+
+  <itemset category="Micro/STM32" type="QemuDevice" folder="STM32" >
+    <item name="STM32F103C8"  icon=":/ic2.png" info="STM32F103C8 (Cortex-M3, 64KB Flash, 20KB SRAM, LQFP48)" />
+    <item name="STM32F103CB"  icon=":/ic2.png" info="STM32F103CB (Cortex-M3, 128KB Flash, 20KB SRAM, LQFP48)" />
+    <item name="STM32F103RB"  icon=":/ic2.png" info="STM32F103RB (Cortex-M3, 128KB Flash, 20KB SRAM, LQFP64)" />
+    <item name="STM32F103RC"  icon=":/ic2.png" info="STM32F103RC (Cortex-M3, 256KB Flash, 48KB SRAM, LQFP64)" />
+    <item name="STM32F103VC"  icon=":/ic2.png" info="STM32F103VC (Cortex-M3, 256KB Flash, 48KB SRAM, LQFP100)" />
+    <item name="STM32F103VE"  icon=":/ic2.png" info="STM32F103VE (Cortex-M3, 512KB Flash, 64KB SRAM, LQFP100)" />
+    <item name="STM32F103T6"  icon=":/ic2.png" info="STM32F103T6 (Cortex-M3, 32KB Flash, 10KB SRAM, QFN36)" />
+    <item name="STM32F103T8"  icon=":/ic2.png" info="STM32F103T8 (Cortex-M3, 64KB Flash, 20KB SRAM, QFN36)" />
+  </itemset>
+
+</itemlib>
+

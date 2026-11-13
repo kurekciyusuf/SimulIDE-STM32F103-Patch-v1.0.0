@@ -1,0 +1,14 @@
+﻿<circuit version="2.0.0-" rev="260328" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" anicurr="0" ansi="0" width="3200" height="2400" >
+
+<item itemtype="QemuDevice" CircId="STM32F103C8-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-200,-150" rotation="0" hflip="1" vflip="1" label="STM32F103C8" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Program="blink_64k.bin" />
+
+<item itemtype="Led" CircId="Led-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-280,-130" rotation="0" hflip="1" vflip="1" label="PC13_LED" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="true" Threshold="2.0 V" MaxCurrent="30 mA" Resistance="100 Î©" />
+
+<item itemtype="SerialTerm" CircId="SerialTerm-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-60,-130" rotation="0" hflip="1" vflip="1" label="USART1" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="true" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="STM32F103C8-1-PC13" endpinid="Led-1-lPin" pointList="-200,-130,-264,-130" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="STM32F103C8-1-PA9" endpinid="SerialTerm-1-pin0" pointList="-168,-90,-76,-130" />
+
+</circuit>
+

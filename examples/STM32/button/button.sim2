@@ -1,0 +1,14 @@
+﻿<circuit version="2.0.0-" rev="260328" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" anicurr="0" ansi="0" width="3200" height="2400" >
+
+<item itemtype="QemuDevice" CircId="STM32F103C8-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-200,-150" rotation="0" hflip="1" vflip="1" label="STM32F103C8" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Program="button_64k.bin" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-260,-40" rotation="0" hflip="1" vflip="1" label="PA0_Button" idLabPos="-50,-10" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="3.3 V" Small="true" Out="false" />
+
+<item itemtype="Led" CircId="Led-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-280,-130" rotation="0" hflip="1" vflip="1" label="PC13_LED" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.0 V" MaxCurrent="30 mA" Resistance="100 Î©" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="STM32F103C8-1-PC13" endpinid="Led-1-lPin" pointList="-200,-130,-264,-130" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="Fixed Voltage-1-outnod" endpinid="STM32F103C8-1-PA0" pointList="-244,-40,-200,-40" />
+
+</circuit>
+

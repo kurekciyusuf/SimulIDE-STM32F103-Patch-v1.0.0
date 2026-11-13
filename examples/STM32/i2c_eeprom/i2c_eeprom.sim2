@@ -1,0 +1,46 @@
+<circuit version="2.0.0-" rev="260328" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="1" anicurr="0" ansi="0" width="3200" height="2400" >
+
+<item itemtype="QemuDevice" CircId="STM32F103C8-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-200,-150" rotation="0" hflip="1" vflip="1" label="STM32F103C8" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Program="i2c_eeprom_64k.bin" />
+
+<item itemtype="I2CRam" CircId="I2CRam-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-40,-60" rotation="0" hflip="1" vflip="1" label="24C02_EEPROM" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Control_Code="80" Size_bytes="256" Frequency="100" />
+
+<item itemtype="SerialTerm" CircId="SerialTerm-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-40,-150" rotation="0" hflip="1" vflip="1" label="I2C_Log" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="true" />
+
+<item itemtype="Led" CircId="Led-1" mainComp="false" Show_id="true" Show_Val="false" Pos="-280,-130" rotation="0" hflip="1" vflip="1" label="PC13_LED" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="true" Threshold="2.0 V" MaxCurrent="30 mA" Resistance="100 Ω" />
+
+<item itemtype="Connector" uid="Connector-1" startpinid="STM32F103C8-1-PC13" endpinid="Led-1-lPin" pointList="-200,-130,-264,-130" />
+
+<item itemtype="Connector" uid="Connector-2" startpinid="STM32F103C8-1-PA9" endpinid="SerialTerm-1-pin0" pointList="-168,-90,-56,-150" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-5" mainComp="false" Show_id="false" Show_Val="true" Pos="-120,-20" rotation="0" hflip="1" vflip="1" label="VDD_SCL" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="3.3 V" Small="true" Out="true" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-6" mainComp="false" Show_id="false" Show_Val="true" Pos="-120,20" rotation="0" hflip="1" vflip="1" label="VDD_SDA" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="3.3 V" Small="true" Out="true" />
+
+<item itemtype="Resistor" CircId="Resistor-7" mainComp="false" Show_id="true" Show_Val="true" Pos="-88,-20" rotation="0" hflip="1" vflip="1" label="R_SCL" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="4700 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-8" mainComp="false" Show_id="true" Show_Val="true" Pos="-88,20" rotation="0" hflip="1" vflip="1" label="R_SDA" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="4700 Ω" />
+
+<item itemtype="Node" CircId="Node-10" mainComp="false" Pos="-64,-44" />
+
+<item itemtype="Node" CircId="Node-11" mainComp="false" Pos="-64,-60" />
+
+<!-- Pull-ups: 3.3 V -> 4.7 kOhm -> I2C lines -->
+<item itemtype="Connector" uid="Connector-5" startpinid="Fixed Voltage-5-outnod" endpinid="Resistor-7-lPin" pointList="-104,-20,-104,-20" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Fixed Voltage-6-outnod" endpinid="Resistor-8-lPin" pointList="-104,20,-104,20" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Resistor-7-rPin" endpinid="Node-10-0" pointList="-72,-20,-64,-44" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="Resistor-8-rPin" endpinid="Node-11-0" pointList="-72,20,-64,-60" />
+
+<!-- I2C SCL: STM32 PB6 -> Node-10 -> I2CRam SCL (in1) -->
+<item itemtype="Connector" uid="Connector-3" startpinid="STM32F103C8-1-PB6" endpinid="Node-10-1" pointList="-168,-58,-64,-44" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Node-10-2" endpinid="I2CRam-1-in1" pointList="-64,-44,-56,-44" />
+
+<!-- I2C SDA: STM32 PB7 -> Node-11 -> I2CRam SDA (in0) -->
+<item itemtype="Connector" uid="Connector-4" startpinid="STM32F103C8-1-PB7" endpinid="Node-11-1" pointList="-168,-50,-64,-60" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Node-11-2" endpinid="I2CRam-1-in0" pointList="-64,-60,-56,-60" />
+
+</circuit>
