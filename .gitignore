@@ -1,16 +1,2 @@
 # Ignore private firmware/projects, logs, backups, and full upstream SimulIDE binaries
-*.hex
-kaynak*
-Firmware_STM32/
-Orijinal_Kaynak_Dosyalari/
-*.log
-*.bak
-*.original.bak
-*.zip
-simulide.exe
-simulide_*.exe
-*.dll
-__pycache__/
-.DS_Store
-Thumbs.db
 
