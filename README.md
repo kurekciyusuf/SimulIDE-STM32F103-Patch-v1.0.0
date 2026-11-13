@@ -1,10 +1,11 @@
 # SimulIDE 2.0 STM32F103 Patch (Win64)
 
-[🇹🇷 Türkçe](#-türkçe) | [🇬🇧 English](#-english)
+[🇹🇷 Türkçe](#-türkçe) | [🇬🇧 English](#-english) | [🙏 Original Project / Orijinal Proje](https://github.com/Arcachofo/SimulIDE-dev)
 
 > [!NOTE]
-> Bu depo **yalnızca saf STM32 yamasını (~460 KB)** içerir; resmi `SimulIDE 2.0 (R260501 Win64)` ikili dosyalarını veya herhangi bir özel projeye ait firmware dosyasını içermez.  
-> This repository contains **only the pure STM32 patch (~460 KB)** — no upstream `SimulIDE` binaries and no private project firmware are redistributed here.
+> **Orijinal Proje / Original Project:** [**Arcachofo/SimulIDE-dev**](https://github.com/Arcachofo/SimulIDE-dev) (by Santiago González — [`qemu_simulide`](https://github.com/Arcachofo/qemu_simulide))  
+> Bu depo **yalnızca saf STM32 ek yamasını (~464 KB)** içerir; resmi `SimulIDE 2.0 (R260501 Win64)` ikili dosyalarını veya herhangi bir özel projeye ait firmware dosyasını içermez.  
+> This repository contains **only the pure STM32 add-on patch (~464 KB)** — no upstream `SimulIDE` binaries and no private project firmware are redistributed here.
 
 ---
 
@@ -34,7 +35,7 @@ Bu yama, resmi `SimulIDE_2-R260501_Win64` kurulumuna doğrudan **STM32F101 / STM
 
 ### 2. Kurulum
 
-1. Resmi **SimulIDE 2.0 (`SimulIDE_2-R260501_Win64`)** paketini bilgisayarınıza indirin ve çıkarın.
+1. Orijinal projeden ([Arcachofo/SimulIDE-dev](https://github.com/Arcachofo/SimulIDE-dev)) resmi **SimulIDE 2.0 (`SimulIDE_2-R260501_Win64`)** paketini indirin ve çıkarın.
 2. Bu depoyu indirin veya klonlayın:
    ```bash
    git clone https://github.com/kurekciyusuf/SimulIDE-STM32F103-Patch-v1.0.0.git
@@ -77,7 +78,7 @@ This patch enables **STM32F101 / STM32F103 (`QemuDevice`)** simulation directly 
 
 ### 2. Installation
 
-1. Download and extract official **SimulIDE 2.0 (`SimulIDE_2-R260501_Win64`)**.
+1. Download and extract official **SimulIDE 2.0 (`SimulIDE_2-R260501_Win64`)** from the upstream repository ([Arcachofo/SimulIDE-dev](https://github.com/Arcachofo/SimulIDE-dev)).
 2. Clone or download this repository:
    ```bash
    git clone https://github.com/kurekciyusuf/SimulIDE-STM32F103-Patch-v1.0.0.git
